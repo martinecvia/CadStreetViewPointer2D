@@ -1,5 +1,4 @@
-﻿#define DEBUG
-#define NON_VOLATILE_MEMORY
+﻿#define NON_VOLATILE_MEMORY
 
 using System; // Potřebné pro 4.6 Math
 using System.Diagnostics;
