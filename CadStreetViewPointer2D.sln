@@ -5,6 +5,10 @@ VisualStudioVersion = 17.14.36301.6 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadStreetViewPointer2D", "CadStreetViewPointer2D\CadStreetViewPointer2D.csproj", "{48B557DE-5675-4D25-B691-5DD5C1DF3F67}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET46_ACAD_2017_CadStreetViewPointer2D", "NET46_ACAD_2017_CadStreetViewPointer2D\NET46_ACAD_2017_CadStreetViewPointer2D.csproj", "{88133B26-936C-4280-9FD0-64D044FAAE0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET48_ACAD_2024_CadStreetViewPointer2D", "NET48_ACAD_2024_CadStreetViewPointer2D\NET48_ACAD_2024_CadStreetViewPointer2D.csproj", "{938E9D6D-FB5F-4641-9575-BC60008B8D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{48B557DE-5675-4D25-B691-5DD5C1DF3F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48B557DE-5675-4D25-B691-5DD5C1DF3F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48B557DE-5675-4D25-B691-5DD5C1DF3F67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88133B26-936C-4280-9FD0-64D044FAAE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88133B26-936C-4280-9FD0-64D044FAAE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88133B26-936C-4280-9FD0-64D044FAAE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88133B26-936C-4280-9FD0-64D044FAAE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
