@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Obecné informace o sestavení se řídí přes následující 
 // sadu atributů. Změnou hodnot těchto atributů se upraví informace
 // přidružené k sestavení.
 [assembly: AssemblyTitle("NET48_ACAD_2024_CadStreetViewPointer2D")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Plugin pro AutoCAD/ZWCAD pro otevření Google Street View z JTSK souřadnice.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("NET48_ACAD_2024_CadStreetViewPointer2D")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2025")]
+[assembly: AssemblyCompany("Martin Coplák, VUT Brno")]
+[assembly: AssemblyProduct("CadStreetViewPointer2D (.NET Framework 4.8, AutoCAD 2024 kompatibilní)")]
+[assembly: AssemblyCopyright("Copyright © Martin Coplák 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +28,5 @@ using System.Runtime.InteropServices;
 //      Číslo sestavení
 //      Revize
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("2025.7.10.0")]
+[assembly: AssemblyFileVersion("2025.7.10.0")]

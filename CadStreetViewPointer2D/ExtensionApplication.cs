@@ -65,7 +65,7 @@ namespace CadStreetViewPointer2D
                 "\n==========================================" +
                 "\n   Google StreetView pointer generator for CAD " +
                 "\n   (c) 2025 Martin Coplák  |  VUT Brno" +
-                "\n   Contact: 211869@vutbr.com" +
+                "\n   Contact: martin.coplak@viapont.cz" +
                 "\n------------------------------------------" +
                 "\n   CadStreetView Pointer (2D)  |   Version: 25.07.09" +
                 "\n==========================================\n"
@@ -73,9 +73,9 @@ namespace CadStreetViewPointer2D
 
         }
 
-        #region JTSK2_STREEVIEW
-        [CommandMethod("JTSK2_STREEVIEW")]
-        public static void JTSK2_STREEVIEW()
+        #region JTSK2_STREETVIEW
+        [CommandMethod("JTSK2_STREETVIEW")]
+        public static void JTSK2_STREETVIEW()
         {
             PromptPointOptions place = new PromptPointOptions("\nVyber místo"); // Místo new(...): Důvod podpora v4.6
             PromptPointResult evPoint = DocumentEditor.GetPoint(place);

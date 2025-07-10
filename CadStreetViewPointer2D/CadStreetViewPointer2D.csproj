@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>48b557de-5675-4d25-b691-5dd5c1df3f67</ProjectGuid>
+    <ProjectGuid>{48B557DE-5675-4D25-B691-5DD5C1DF3F67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CadStreetViewPointer2D</RootNamespace>
@@ -31,24 +31,37 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="AcCoreMgd">
+      <HintPath>..\Libraries\AutoCAD\2025\AcCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <HintPath>..\Libraries\AutoCAD\2025\AcDbMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMgd">
+      <HintPath>..\Libraries\AutoCAD\2025\AcMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>..\Libraries\AutoCAD\2025\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>..\Libraries\AutoCAD\2025\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
- </Project>
+</Project>

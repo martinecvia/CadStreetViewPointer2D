@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,6 +32,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>..\Libraries\AutoCAD\2017\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>..\Libraries\AutoCAD\2017\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>..\Libraries\AutoCAD\2017\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>..\Libraries\AutoCAD\2017\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>..\Libraries\AutoCAD\2017\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="..\CadStreetViewPointer2D\ExtensionApplication.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
