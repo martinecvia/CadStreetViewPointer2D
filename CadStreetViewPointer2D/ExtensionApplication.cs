@@ -63,7 +63,7 @@ namespace CadStreetViewPointer2D
         {
             DocumentEditor.WriteMessage(
                 "\n==========================================" +
-                "\n   Google StreetView pointer generator for CAD " +
+                "\n   Google StreetView pointer generator for ZwCAD " +
                 "\n   (c) 2025 Martin Coplák  |  VUT Brno" +
                 "\n   Contact: martin.coplak@viapont.cz" +
                 "\n------------------------------------------" +

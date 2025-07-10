@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadStreetViewPointer2D", "CadStreetViewPointer2D\CadStreetViewPointer2D.csproj", "{48B557DE-5675-4D25-B691-5DD5C1DF3F67}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET46_ACAD_2017_CadStreetViewPointer2D", "NET46_ACAD_2017_CadStreetViewPointer2D\NET46_ACAD_2017_CadStreetViewPointer2D.csproj", "{88133B26-936C-4280-9FD0-64D044FAAE0A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET48_ACAD_2024_CadStreetViewPointer2D", "NET48_ACAD_2024_CadStreetViewPointer2D\NET48_ACAD_2024_CadStreetViewPointer2D.csproj", "{938E9D6D-FB5F-4641-9575-BC60008B8D00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NET47_ZCAD_2025_CadStreetViewPointer2D", "NET47_ZCAD_2025_CadStreetViewPointer2D\NET47_ZCAD_2025_CadStreetViewPointer2D.csproj", "{3D770E02-7BDE-4A49-A639-5C783F55AD76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{938E9D6D-FB5F-4641-9575-BC60008B8D00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D770E02-7BDE-4A49-A639-5C783F55AD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D770E02-7BDE-4A49-A639-5C783F55AD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D770E02-7BDE-4A49-A639-5C783F55AD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D770E02-7BDE-4A49-A639-5C783F55AD76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
