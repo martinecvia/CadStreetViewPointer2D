@@ -1,0 +1,42 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: MSBuild
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build-net4:
+    runs-on: windows-2019
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+    - name: setup-msbuild
+      uses: microsoft/setup-msbuild@v1.1
+    
+    - name: Restore Packages
+      run: nuget restore CadStreetViewPointer2D.sln
+
+    - name: Build .NET 4.6 (AutoCAD)
+      run: msbuild NET46_ACAD_2017_CadStreetViewPointer2D/NET46_ACAD_2017_CadStreetViewPointer2D.csproj /p:Configuration=Release
+
+    - name: Build .NET 4.8 (AutoCAD)
+      run: msbuild NET48_ACAD_2024_CadStreetViewPointer2D/NET48_ACAD_2024_CadStreetViewPointer2D.csproj /p:Configuration=Release 
+      
+#    - name: Setup .NET
+#      uses: actions/setup-dotnet@v4
+#      with:
+#        dotnet-version: 8.0.x
+#    - name: Restore dependencies
+#      run: dotnet restore
+#    - name: Build
+#      run: dotnet build --no-restore
+#    - name: Test
+#      run: dotnet test --no-build --verbosity normal
