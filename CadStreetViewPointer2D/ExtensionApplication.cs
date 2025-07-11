@@ -55,8 +55,7 @@ namespace CadStreetViewPointer2D
                                 return true;
                             }
                         }
-                    } catch
-                    {
+                    } catch {
                         return false;
                     }
                
