@@ -45,14 +45,21 @@ namespace CadStreetViewPointer2D
             {
                 if (Process.GetCurrentProcess().ProcessName.Contains("acad"))
                 {
-                    foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
+                    try
                     {
-                        var fullName = assembly.FullName;
-                        if (fullName != null && fullName.StartsWith("acdbmgd", StringComparison.OrdinalIgnoreCase))
+                        foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
                         {
-                            return true;
+                            var fullName = assembly.FullName;
+                            if (fullName != null && fullName.StartsWith("acdbmgd", StringComparison.OrdinalIgnoreCase))
+                            {
+                                return true;
+                            }
                         }
+                    } catch
+                    {
+                        return false;
                     }
+               
                 }
                 return false;
             }
@@ -62,14 +69,13 @@ namespace CadStreetViewPointer2D
         {
             DocumentEditor.WriteMessage(
                 "\n==========================================" +
-                "\n   Google StreetView pointer generator for ZwCAD " +
+                "\n   Google StreetView pointer generator for CAD " +
                 "\n   (c) 2025 Martin Coplák  |  VUT Brno" +
                 "\n   Contact: martin.coplak@viapont.cz" +
                 "\n------------------------------------------" +
                 "\n   CadStreetView Pointer (2D)  |   Version: 25.07.09" +
                 "\n==========================================\n"
             );
-
         }
 
         #region JTSK2_STREETVIEW
